@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Resale Pro - verified fashion resale, built to move.">
+  <title>Resale Pro | Fashion worth recirculating</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Resale Pro home">RESALE<br>PRO.</a>
+    <nav aria-label="Main navigation">
+      <a href="#market">market</a><a href="#system">how it works</a><a href="#sell">sell</a>
+    </nav>
+    <a class="header-cta" href="#market"><span>What are you looking for?</span><b>Shop now ↗</b></a>
+    <button class="menu" aria-label="Toggle menu">menu</button>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-meta"><span>01 - circular fashion</span><span>scroll ↓</span></div>
+      <h1>WORTH<br><span>WEARING.</span><br>BUILT TO<br><span>LAST.</span></h1>
+      <div class="hero-foot"><p>Verified clothing resale for people who know a great piece deserves another run.</p><div class="orb"><i></i><i></i><i></i></div></div>
+    </section>
+
+    <section class="manifesto">
+      <p class="kicker">smart resale</p>
+      <div class="manifesto-grid">
+        <h2>THE HARD PART<br>ISN'T FINDING MORE.<br><em>IT'S CHOOSING BETTER.</em></h2>
+        <div><p>Resale Pro turns secondhand shopping into a clear, reliable system. Every listing is easy to understand, every condition is visible, and every piece is ready for its next life.</p><p>Less waste. Better value. Clothes with somewhere to go.</p></div>
+      </div>
+    </section>
+
+    <section id="market" class="market">
+      <div class="section-intro"><span>where do we start?</span><h2>LIVE INVENTORY.<br>READY TO MOVE.</h2><p>Filter the current collection and add verified pieces to your bag.</p></div>
+      <div class="filters" role="group" aria-label="Filter products"><button class="active" data-filter="all">all</button><button data-filter="tops">tops</button><button data-filter="bottoms">bottoms</button><button data-filter="outerwear">outerwear</button></div>
+      <div id="products" class="product-list"></div>
+    </section>
+
+    <section id="system" class="system">
+      <div class="section-intro light"><span>the resale engine</span><h2>FROM CLOSET<br>TO CIRCULATION.</h2></div>
+      <div class="steps">
+        <article><b>01</b><h3>DISCOVER</h3><button aria-label="Discover details">+</button><p>Browse a focused inventory with clear product information and condition grading.</p></article>
+        <article><b>02</b><h3>VERIFY</h3><button aria-label="Verify details">+</button><p>Understand what you are buying before it reaches your bag.</p></article>
+        <article><b>03</b><h3>CHECK OUT</h3><button aria-label="Checkout details">+</button><p>A direct path from product discovery to a secure transaction.</p></article>
+        <article><b>04</b><h3>RECIRCULATE</h3><button aria-label="Recirculate details">+</button><p>Keep quality clothing moving and extend the life of every piece.</p></article>
+      </div>
+    </section>
+
+    <section id="sell" class="sell">
+      <div><span class="kicker">before</span><strong>Closet clutter</strong></div>
+      <div class="flow">→ → →</div>
+      <div><span class="kicker">after</span><strong>Curated value</strong></div>
+      <h2>TURN THE<br>UNWORN INTO<br><em>SOMETHING USEFUL.</em></h2>
+      <a href="mailto:sell@resalepro.example">Start selling ↗</a>
+    </section>
+
+    <section class="newsletter">
+      <p>inventory moves quickly</p><h2>GET THE NEXT<br>DROP FIRST.</h2>
+      <form id="newsletterForm"><label class="sr-only" for="email">Email address</label><input id="email" type="email" required placeholder="your email"><button>join ↗</button></form><p id="formMsg" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <footer><a class="logo" href="#top">RESALE<br>PRO.</a><div><p>index</p><a href="#market">market</a><a href="#system">how it works</a><a href="#sell">sell</a></div><div><p>contact</p><a href="mailto:hello@resalepro.example">hello@resalepro.example</a><span>online / everywhere</span></div><small>© <span id="year"></span> Resale Pro</small></footer>
+
+  <button id="cartBtn" class="floating-cart">bag <span id="cartCount">0</span></button>
+  <aside id="cart" class="cart" aria-hidden="true"><div class="cart-head"><h2>YOUR BAG</h2><button id="closeCart" aria-label="Close bag">×</button></div><div id="cartItems" class="cart-items"></div><div class="cart-foot"><div><span>subtotal</span><strong id="subtotal">$0.00</strong></div><button id="checkout">checkout ↗</button><small>Taxes and shipping calculated at checkout.</small></div></aside><div id="overlay" class="overlay"></div>
+  <script src="app.js"></script>
+</body></html>
